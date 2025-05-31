@@ -1,5 +1,3 @@
-
-
 .product-container {
   position: relative;
   width: 100%;
@@ -7,14 +5,12 @@
   border-radius: 4px;
 }
 
-
 .product-container__image {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-
 
 .product-container__title {
   position: absolute;
@@ -28,17 +24,20 @@
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 200;
   color: #ffffff;
-
   background-color: rgba(0, 0, 0, 0.5);
-
-  pointer-events: none; 
+  pointer-events: none;
 }
 
+.product-container__button-wrapper {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 .product-container__add-button {
-  position: absolute;
-  bottom: 0.5rem; 
-  right: 0.5rem; 
   background-color: var(--color-link, #007acc);
   border: none;
   border-radius: 50%;
@@ -51,6 +50,14 @@
   transition: background-color 0.15s ease-in-out, transform 0.1s ease-in-out;
 }
 
+.product-container__confirmation {
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
 
 .product-container__add-button:hover,
 .product-container__add-button:focus {
@@ -58,16 +65,17 @@
   transform: scale(1.05);
 }
 
-
 @media (max-width: 400px) {
   .product-container__title {
     font-size: clamp(0.9rem, 3.5vw, 1.25rem);
     padding: 0.25rem 0.5rem;
   }
-  .product-container__add-button {
-    padding: 0.4rem;
+  .product-container__button-wrapper {
     bottom: 0.25rem;
     right: 0.25rem;
   }
+  .product-container__confirmation {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
 }
-
