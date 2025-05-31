@@ -213,7 +213,7 @@ function App() {
           In this sense, each tee becomes a poster for critique—wearable
           commentary on how clothing can reinforce or challenge class divisions.
           By focusing solely på T-shirts, K.M.F turns en simple garment into en
-          statement: den mest accessible way to broadcast ideas. K.M.F is a
+          statement: the most accessible way to broadcast ideas. K.M.F is a
           political fashion label skapad by den svenska artisten Niklas
           Wallenborg.
         </p>
