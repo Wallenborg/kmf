@@ -204,7 +204,7 @@ function App() {
 
       <TextBlock>
         <p>
-          Karl Marx Fashion makes only t-shirts—because a T-shirt is the best
+          Karl Marx Fashion makes t-shirts — because a t-shirt is the best
           political poster. Karl Marx argued that fashion is both a product of
           and a driving force behind capitalism: it creates new needs, fuels
           demand, and accelerates profit. At its core, fashion reflects class
@@ -212,7 +212,7 @@ function App() {
           the working class can subvert it to express identity and resistance.
           In this sense, each tee becomes a poster for critique—wearable
           commentary on how clothing can reinforce or challenge class divisions.
-          By focusing solely på T-shirts, K.M.F turns en simple garment into en
+          By focusing solely on t-shirts, K.M.F turns an simple garment into a
           statement: the most accessible way to broadcast ideas. K.M.F is a
           political fashion brand created by Swedish artist Niklas
           Wallenborg.
