@@ -1,0 +1,20 @@
+
+.two-product-row {
+    display: flex;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 1rem auto;
+  }
+  
+
+  .two-product-row__item {
+    flex: 1 1 0;
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .two-product-row {
+      flex-direction: column;
+    }
+  }
+  

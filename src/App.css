@@ -1,0 +1,279 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+html,
+body {
+  width: 100%;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; 
+}
+
+
+:root {
+ 
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Georgia', serif;
+
+
+  --color-text: #333333;        
+  --color-heading: #111111;     
+  --color-link: #cc0000;        
+  --color-bg: #FFFFFF;          
+  --color-muted: #666666;       
+
+
+  --spacing-xs: 0.25rem; 
+  --spacing-sm: 0.5rem;   
+  --spacing-md: 1rem;    
+  --spacing-lg: 1.5rem;   
+  --spacing-xl: 2rem;     
+
+
+  --line-height-base: 1.6;
+  --line-height-heading: 1.2;
+}
+
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;                   
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+
+a {
+  color: var(--color-link);
+  transition: color 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  color: darken(var(--color-link), 10%); 
+}
+
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+
+small {
+  font-size: 0.875rem;      
+  color: var(--color-muted);
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  color: var(--color-heading);
+  line-height: var(--line-height-heading);
+  margin-bottom: calc(var(--spacing-md) / 2); 
+  word-wrap: break-word;
+}
+
+
+h1 {
+
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+/* H2: Nästa nivå */
+h2 {
+ 
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+
+h3 {
+ 
+  font-size: clamp(1.75rem, 4vw, 3rem);
+}
+
+
+h4 {
+  
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+
+h5 {
+  
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+
+h6 {
+ 
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+
+p {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+}
+
+
+ul,
+ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-base);
+}
+
+
+blockquote {
+  margin: var(--spacing-lg) 0;
+  padding-left: var(--spacing-lg);
+  border-left: 4px solid var(--color-muted);
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-muted);
+  margin: var(--spacing-lg) 0;
+}
+
+
+input,
+textarea,
+select {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: 4px;
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  width: 100%;
+  max-width: 100%;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-link);
+  outline: none;
+}
+
+
+button {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: var(--line-height-base);
+  color: #ffffff;              
+  background-color: var(--color-link);
+  border: none;
+  border-radius: 4px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+button:focus {
+  color: #000; 
+  outline: none;
+}
+
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+  }
+  h2 {
+    font-size: clamp(1.75rem, 6vw, 3rem);
+  }
+ 
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

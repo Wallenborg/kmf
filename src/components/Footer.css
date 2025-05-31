@@ -1,0 +1,51 @@
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+
+
+.footer__title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 1;
+}
+
+
+.footer__letter {
+  font-size: clamp(1.5rem, 10vw, 2rem);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  white-space: pre;
+}
+
+
+.footer__contact {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: left;
+}
+
+
+@media (max-width: 600px) {
+  .footer__title {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

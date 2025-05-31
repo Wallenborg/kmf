@@ -1,0 +1,35 @@
+
+
+.hero {
+    width: 100%;
+    min-height: fit-content;           
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 0;
+   
+  }
+  
+  .hero__title {
+  
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;              
+    box-sizing: border-box;
+    line-height: 1;             
+  }
+  
+ 
+  .hero__letter {
+  
+    font-size: clamp(2rem, 8vw, 5rem);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 900;
+    color: #222;
+    white-space: pre; 
+  }
+  

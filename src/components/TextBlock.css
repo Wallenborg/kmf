@@ -1,0 +1,14 @@
+
+
+.text-block {
+    margin-top: 100px;
+    max-width: 650px;        
+    margin: 20px auto;          
+    padding: 1rem;            
+    box-sizing: border-box;   
+    text-align: center;       
+    line-height: 1.6;        
+    color: var(--color-text); 
+    background-color: transparent; 
+  }
+  
