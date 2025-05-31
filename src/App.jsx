@@ -214,7 +214,7 @@ function App() {
           commentary on how clothing can reinforce or challenge class divisions.
           By focusing solely på T-shirts, K.M.F turns en simple garment into en
           statement: the most accessible way to broadcast ideas. K.M.F is a
-          political fashion label skapad by den svenska artisten Niklas
+          political fashion brand created by Swedish artist Niklas
           Wallenborg.
         </p>
       </TextBlock>
